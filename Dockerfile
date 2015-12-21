@@ -1,14 +1,11 @@
-FROM ubuntu:10.04
-
-MAINTAINER Ilias Kiourktsidis "ekiourk@gmail.com"
+FROM ubuntu:14.04
 
 RUN apt-get update && apt-get install -y\
-  build-essential\
-  autoconf\
-  automake\
-  libxmu-dev\
-  curl\
-  gcc-4.3
+  build-essential \
+  autoconf \
+  automake \
+  libxmu-dev \
+  curl
 
 RUN curl -L http://downloads.sourceforge.net/project/nsnam/allinone/ns-allinone-2.35/ns-allinone-2.35.tar.gz | tar xz
 
